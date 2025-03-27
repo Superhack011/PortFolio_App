@@ -1,6 +1,5 @@
-const API_BASE_URL = "http://127.0.0.1:5000"; // Change this if backend is deployed
+const API_BASE_URL = "http://127.0.0.1:5000"; ///local host url
 
-// Function to fetch user profile
 export const getUserProfile = async () => {
   try {
     const response = await fetch(`${API_BASE_URL}/api/profile`);

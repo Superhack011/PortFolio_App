@@ -7,7 +7,6 @@ app.config.from_object('config.Config')
 db.init_app(app)
 CORS(app)
 
-# Get user profile
 @app.route('/profile', methods=['GET'])
 def get_profile():
     user = User.query.first()
@@ -20,7 +19,6 @@ def get_profile():
         })
     return jsonify({"message": "No profile found"}), 404
 
-# Update profile
 @app.route('/profile', methods=['PUT'])
 def update_profile():
     data = request.json
@@ -36,13 +34,11 @@ def update_profile():
     db.session.commit()
     return jsonify({"message": "Profile updated successfully"})
 
-# Get skills
 @app.route('/skills', methods=['GET'])
 def get_skills():
     skills = Skill.query.all()
     return jsonify([{"id": skill.id, "name": skill.name} for skill in skills])
 
-# Add skill
 @app.route('/skills', methods=['POST'])
 def add_skill():
     data = request.json
@@ -51,7 +47,6 @@ def add_skill():
     db.session.commit()
     return jsonify({"message": "Skill added successfully"})
 
-# Get projects
 @app.route('/projects', methods=['GET'])
 def get_projects():
     projects = Project.query.all()
@@ -62,7 +57,6 @@ def get_projects():
         "github_link": project.github_link
     } for project in projects])
 
-# Add project
 @app.route('/projects', methods=['POST'])
 def add_project():
     data = request.json

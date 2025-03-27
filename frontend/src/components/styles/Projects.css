@@ -1,93 +1,97 @@
-/* styles/Projects.css */
-
 .projects-container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 40px 20px;
-    text-align: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border-bottom: 2px solid #ddd; */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.add-project-btn {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.add-project-btn:hover {
+  background: linear-gradient(135deg, #0056b3, #003580);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: rgb(129, 191, 241);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(26, 26, 158, 0.3);
+}
+
+.card-header {
+  background: #707280;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 15px;
+  color: #202020;
+  margin-bottom: 8px;
+}
+
+.tech-stack {
+  font-size: 14px;
+  color: #1b1b1b;
+  margin-bottom: 10px;
+}
+
+.repo-link {
+  display: inline-block;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #473cdd, #2742db);
+  color: rgb(0, 0, 0);
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.repo-link:hover {
+  background: linear-gradient(135deg, #1b31f0, #3f1ecf);
+}
+
+@media screen and (max-width: 768px) {
+  .profile-section,
+  .info-section {
+    width: 90%;
   }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* border-bottom: 2px solid #ddd; */
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-  }
-  
-  h2 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #ffffff;
-  }
-  
-  .add-project-btn {
-    background: linear-gradient(135deg, #007bff, #0056b3);
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 6px;
-    font-size: 16px;
-    transition: 0.3s;
-  }
-  
-  .add-project-btn:hover {
-    background: linear-gradient(135deg, #0056b3, #003580);
-  }
-  
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-  }
-  
-  .project-card {
-    background: rgb(129, 191, 241);
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    border: 2px solid rgba(0, 0, 0, 0.1);
-  }
-  
-  .project-card:hover {
-    transform: translateY(-5px);
-    border-color: rgba(26, 26, 158, 0.3);
-  }
-  
-  .card-header {
-    background: #707280;
-    padding: 10px;
-    border-radius: 8px;
-    margin-bottom: 10px;
-  }
-  
-  .description {
-    font-size: 15px;
-    color: #202020;
-    margin-bottom: 8px;
-  }
-  
-  .tech-stack {
-    font-size: 14px;
-    color: #1b1b1b;
-    margin-bottom: 10px;
-  }
-  
-  .repo-link {
-    display: inline-block;
-    margin-top: 10px;
-    background: linear-gradient(135deg, #473cdd, #2742db);
-    color: rgb(0, 0, 0);
-    padding: 8px 12px;
-    text-decoration: none;
-    border-radius: 6px;
-    font-size: 15px;
-    transition: 0.3s ease-in-out;
-  }
-  
-  .repo-link:hover {
-    background: linear-gradient(135deg, #1b31f0, #3f1ecf);
-  }
-  
+}

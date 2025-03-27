@@ -1,4 +1,3 @@
-/* styles/Skills.css */
 .container {
     max-width: 600px;
     margin: 50px auto;
@@ -77,4 +76,10 @@ button:hover {
     background: #cec8c8;
     color: rgb(15, 15, 15);
     transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+    .profile-section, .info-section {
+        width: 90%;
+    }
 }

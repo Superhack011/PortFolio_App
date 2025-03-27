@@ -1,4 +1,3 @@
-/* Edit Profile Styling */
 .edit-profile {
     max-width: 500px;
     margin: 80px auto 20px auto;
@@ -10,14 +9,12 @@
     text-align: center;
 }
 
-/* Form Title */
 .edit-profile h2 {
     font-size: 28px;
     color: #333;
     margin-bottom: 20px;
 }
 
-/* Input Fields */
 .edit-profile input, 
 .edit-profile textarea {
     width: 100%;
@@ -28,13 +25,11 @@
     font-size: 16px;
 }
 
-/* Textarea */
 .edit-profile textarea {
     height: 80px;
     resize: none;
 }
 
-/* Save Button */
 .edit-profile button {
     background: #ff7e5f;
     color: white;
@@ -51,7 +46,6 @@
     background: #ff4b2b;
 }
 
-/* Success & Error Messages */
 .message {
     margin-top: 10px;
     color: green;

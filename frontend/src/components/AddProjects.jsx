@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./styles/AddProjects.css"; 
 
 const AddProject = () => {
   const [project, setProject] = useState({
@@ -21,14 +22,14 @@ const AddProject = () => {
   };
 
   return (
-    <div className="add-project">
+    <div className="add-project-container">
       <h2>Add New Project</h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="add-project-form">
         <input type="text" name="title" placeholder="Project Title" value={project.title} onChange={handleChange} required />
-        <textarea name="description" placeholder="Project Description" value={project.description} onChange={handleChange} required />
         <input type="text" name="techStack" placeholder="Tech Stack (comma-separated)" value={project.techStack} onChange={handleChange} required />
+        <textarea name="description" placeholder="Project Description" value={project.description} onChange={handleChange} required />
         <input type="text" name="repoLink" placeholder="Repository Link" value={project.repoLink} onChange={handleChange} />
-        <button type="submit">Add Project</button>
+        <button type="submit" className="submit-btn">🚀 Add Project</button>
       </form>
     </div>
   );

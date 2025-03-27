@@ -12,7 +12,7 @@ export const getUserProfile = async () => {
   }
 };
 
-// Function to add a new project
+
 export const addProject = async (projectData) => {
   try {
     const response = await fetch(`${API_BASE_URL}/api/add-project`, {

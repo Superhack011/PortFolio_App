@@ -1,0 +1,80 @@
+/* styles/Skills.css */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #8385e2, #583e86);
+    color: rgb(17, 9, 9);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul li {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+ul li:hover {
+    background: white;
+    color: #e0b7be;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    background: rgb(253, 253, 253);
+}
+
+button {
+    background: rgb(15, 2, 27);
+    color: #c60af5;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #cec8c8;
+    color: rgb(15, 15, 15);
+    transform: scale(1.05);
+}

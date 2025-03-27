@@ -10,3 +10,16 @@ The Portfolio Web Application is a full-stack project developed using **React** 
 - 🔹 Deployment Ready: The project includes `requirements.txt` for the backend and `package.json` for the frontend, making installation and deployment effortless.   <br> 
  <br> 
 This Portfolio Web App serves as a personalized digital resume, helping users present their skills and projects professionally while offering a smooth and engaging experience. 🚀 <br> 
+
+Follow these steps to set up and run the Portfolio Web Application locally. <br> 
+Step : 1 - Set Up the Backend (Flask Server)
+ A. cd backend <br> 
+ B. pip install -r requirements.txt <br> 
+ C. Run the Flask server: python app.py <br> 
+ Note : The backend will start at http://localhost:5000/. <br> 
+
+ Step : 2 - Set Up the Frontend (React App)
+  A. cd frontend <br> 
+  B. npm install 
+  C. Start the React development server: npm start <br> 
+  Note : The frontend will be available at http://localhost:3000/.<br> 
